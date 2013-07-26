@@ -1,0 +1,26 @@
+{
+  "name": "modem",
+  "version": "1.0.0",
+  "description": "Send and receive messages and make ussd queries using your GSM modems",
+  "homepage": "http://github.com/emilsedgh/modem",
+  "main": "./lib/modem.js",
+  "keywords": [
+    "ussd",
+    "sms"
+  ],
+  "author": {
+    "name": "Emil Sedgh",
+    "email": "emilsedgh@kde.org",
+    "url": "http://emilsedgh.info/"
+  },
+  "bugs": {
+    "url": "https://github.com/emilsedgh/modem/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emilsedgh/modem.git"
+  },
+  "dependencies" : {
+    "pdu" : ">= 1.1.0"
+  }
+}
