@@ -16,26 +16,30 @@ It supports:
 
 Installation
 ------------
-```bash
-npm install modem```
+```
+npm install modem
+```
 
 Instantiate
 -----------
-```javascript
-var modem = require('modem').Modem()```
+```
+var modem = require('modem').Modem()
+```
 
 Open modem
 ----------
-```javascript
-modem.open(device, callback)```
+```
+modem.open(device, callback)
+```
 
 * device `String` Path to device, like `/dev/ttyUSB0`
-* callback `Function` called when modem is ready for further action
+   * callback `Function` called when modem is ready for further action
 
 Send a message
 --------------
-```javascript
-modem.sms(message, callback)```
+```
+modem.sms(message, callback)
+```
 
 * message `Object`
     * text `String` message body. Longs messages will be splitted and 
@@ -50,8 +54,9 @@ callback `Function` is called with `false` as first argument in case of failure.
 
 Get delivery reports
 --------------------
-```javascript
-modem.on('delivery', callback)```
+```
+modem.on('delivery', callback)
+```
 
 * callback `Function` is called with the following arguments:
 
@@ -66,8 +71,9 @@ This should be obtained from callback of modem.sms()
 
 Receive a message
 -----------------
-```javascript
-modem.on('sms received', callback)```
+```
+modem.on('sms received', callback)
+```
 
 * callback `Function` will be called on each new message with following arguments:
 * message `Object`
@@ -78,23 +84,26 @@ modem.on('sms received', callback)```
 
 Get stored messages
 -------------------
-```javascript
-modem.getMessages(callback)```
+```
+modem.getMessages(callback)
+```
 * callback `Function` will be called with a single argument
   messages `Array`, which contains stores messages
 
 Delete a message
 ----------------
-```javascript
-modem.deleteMessage(message_index, callback)```
+```
+modem.deleteMessage(message_index, callback)
+```
 
 * message_index `Int` is the message index to be deleted
 * callback `Function` called when message is deleted
 
 Get notified when memory is full
 --------------------------------
-```javascript
-modem.on('memory full', callback)```
+```
+modem.on('memory full', callback)
+```
 * callback `Function` will be called when modem has no more space
 for further messages
 
@@ -105,8 +114,9 @@ API is still quite simple.
 
 Run a command
 -------------
-```javascript
-job = modem.execute(at_command, [callback], [priority], [timeout])```
+```
+job = modem.execute(at_command, [callback], [priority], [timeout])
+```
 
 * at_command `String` AT command you would like to execute
 * callback `Function` called when execution is done, in form of `(escape_char, [response])`
@@ -123,12 +133,13 @@ USS Sessions
 
 Instantiate
 -----------
-```javascript
-var Session = require('modem').Ussd_Session```
+```
+var Session = require('modem').Ussd_Session
+```
 
 Create a session
 ----------------
-```javascript
+```
 var Session = require('modem').Ussd_Session
 var CheckBalance = function(c) {
     var session = new Session;
@@ -156,4 +167,5 @@ var CheckBalance = function(c) {
     }
 
     return session;
-}```
+}
+```
