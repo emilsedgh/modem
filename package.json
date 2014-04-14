@@ -1,6 +1,6 @@
 {
   "name": "modem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Send and receive messages and make ussd queries using your GSM modems",
   "homepage": "http://github.com/emilsedgh/modem",
   "main": "./index.js",
@@ -21,6 +21,7 @@
     "url": "https://github.com/emilsedgh/modem.git"
   },
   "dependencies" : {
+    "serialport" : ">= 1.1.1",
     "pdu" : ">= 1.1.0"
   }
 }
