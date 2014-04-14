@@ -42,9 +42,9 @@ modem.sms(message, callback)
 ```
 
 * message `Object`
-    * text `String` message body. Longs messages will be splitted and 
+    * text `String` message body. Longs messages will be splitted and
         sent in multiple parts transparently.
-    * msisdn `String` receiver number.
+    * receiver `String` receiver number.
     * encoding `String`. '16bit' or '7bit'. Use 7bit in case of English messages.
 
 callback `Function` is called with `false` as first argument in case of failure.
@@ -109,7 +109,7 @@ for further messages
 
 Running custom AT commands
 ==========================
-> Modem.js allows you to run AT commands in a queue and manage them without messing the modem.  
+> Modem.js allows you to run AT commands in a queue and manage them without messing the modem.
 API is still quite simple.
 
 Run a command
