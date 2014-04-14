@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Send and receive messages and make ussd queries using your GSM modems",
   "homepage": "http://github.com/emilsedgh/modem",
-  "main": "./lib/modem.js",
+  "main": "./index.js",
   "keywords": [
     "ussd",
     "sms"
