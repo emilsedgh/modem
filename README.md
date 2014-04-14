@@ -47,9 +47,8 @@ modem.sms(message, callback)
     * receiver `String` receiver number.
     * encoding `String`. '16bit' or '7bit'. Use 7bit in case of English messages.
 
-callback `Function` is called with `false` as first argument in case of failure.
-    If sending message(s) is succeeded, it will receive message id of each sent
-    part. (Which could be used to gettind delivery reports)
+callback `Fucntion`(err, references) is called when sending is done.
+  * references `Array` contains reference ids for each part of sent message. (A message may take up to several parts)
 
 
 Get delivery reports
