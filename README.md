@@ -13,6 +13,7 @@ It supports:
 * 16bit (ucsd messages)
 * 7bit (ascii) messages
 * Multipart messages
+* Getting notifications when someone calls
 
 Installation
 ------------
@@ -105,6 +106,14 @@ modem.on('memory full', callback)
 ```
 * callback `Function` will be called when modem has no more space
 for further messages
+
+Get notified when someone calls
+--------------------------------
+```
+modem.on('ring', callback)
+```
+* callback `Function` will be called on each RING with a single argument
+* msisdn `Number`
 
 Running custom AT commands
 ==========================
