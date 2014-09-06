@@ -66,8 +66,7 @@ modem.on('delivery', callback)
     * sender  `Msisdn of receiver`
     * status `Delivery status`
 
-* message_id `String` message_id which has been delivered
-This should be obtained from callback of modem.sms()
+* index `String` index of this delivery report in storage
 
 Receive a message
 -----------------
