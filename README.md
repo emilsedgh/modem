@@ -136,7 +136,7 @@ job = modem.execute(at_command, [callback], [priority], [timeout])
 
 USS Sessions
 ============
-> Modem.js allows you ro tun ussd sessions.
+> Modem.js allows you to run ussd sessions.
 
 Instantiate
 -----------
