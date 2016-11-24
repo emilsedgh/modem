@@ -134,7 +134,7 @@ job = modem.execute(at_command, [callback], [priority], [timeout])
 * job `EventEmitter` represents the added job.
     * it will emit `timeout` if executing job times out
 
-USS Sessions
+USSD Sessions
 ============
 > Modem.js allows you to run ussd sessions.
 
