@@ -17,19 +17,19 @@ It supports:
 
 Installation
 ------------
-```
+```bash
 npm install modem
 ```
 
 Instantiate
 -----------
-```
+```javascript
 var modem = require('modem').Modem()
 ```
 
 Open modem
 ----------
-```
+```javascript
 modem.open(device, callback)
 ```
 
@@ -38,7 +38,7 @@ modem.open(device, callback)
 
 Send a message
 --------------
-```
+```javascript
 modem.sms(message, callback)
 ```
 
@@ -54,7 +54,7 @@ callback `Fucntion`(err, references) is called when sending is done.
 
 Get delivery reports
 --------------------
-```
+```javascript
 modem.on('delivery', callback)
 ```
 
@@ -70,7 +70,7 @@ modem.on('delivery', callback)
 
 Receive a message
 -----------------
-```
+```javascript
 modem.on('sms received', callback)
 ```
 
@@ -83,7 +83,7 @@ modem.on('sms received', callback)
 
 Get stored messages
 -------------------
-```
+```javascript
 modem.getMessages(callback)
 ```
 * callback `Function` will be called with a single argument
@@ -91,7 +91,7 @@ modem.getMessages(callback)
 
 Delete a message
 ----------------
-```
+```javascript
 modem.deleteMessage(message_index, callback)
 ```
 
@@ -100,7 +100,7 @@ modem.deleteMessage(message_index, callback)
 
 Get notified when memory is full
 --------------------------------
-```
+```javascript
 modem.on('memory full', callback)
 ```
 * callback `Function` will be called when modem has no more space
@@ -108,7 +108,7 @@ for further messages
 
 Get notified when someone calls
 --------------------------------
-```
+```javascript
 modem.on('ring', callback)
 ```
 * callback `Function` will be called on each RING with a single argument
@@ -121,7 +121,7 @@ API is still quite simple.
 
 Run a command
 -------------
-```
+```javascript
 job = modem.execute(at_command, [callback], [priority], [timeout])
 ```
 
@@ -140,13 +140,13 @@ USSD Sessions
 
 Instantiate
 -----------
-```
+```javascript
 var Session = require('modem').Ussd_Session
 ```
 
 Create a session
 ----------------
-```
+```javascript
 var Session = require('modem').Ussd_Session
 var CheckBalance = function(c) {
     var session = new Session;
